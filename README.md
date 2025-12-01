@@ -33,5 +33,30 @@ Drag and release to define direction/extent of the cut
 Confirm Cut:
 On mouse release (pointerup), the app:
 Computes the cutting plane
+
+# Mesh Cutting System (Three.js)
+
+A real-time **mesh cutting tool** built with [Three.js](https://threejs.org/).  
+This project lets you interactively **slice 3D meshes** using a virtual cutting plane (knife) and visualizes the result in the browser.
+
+---
+
+## ✨ Features
+
+- ✂️ **Interactive mesh cutting**
+  - Click-and-drag to define a cutting plane
+  - Mesh is split into two parts along the cut
+- 🧱 **Supports arbitrary triangle meshes**
+  - Works with most closed/manifold meshes
+  - Supports custom imported models (with some limitations)
+- 🧭 **Intuitive camera controls**
+  - Orbit, pan, and zoom using mouse
+- 🧪 **Debug visualization**
+  - Optional display of cutting plane, normals, and intersection edges
+- 🧱 **Modular architecture**
+  - Core cutting logic is isolated from rendering & input
+  - Easy to plug into other Three.js scenes
+
+---
 Passes it to MeshCutter
 Replaces the original mesh with the newly cut parts
